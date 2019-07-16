@@ -1,0 +1,66 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <!-- Filter -->
+    <div class="container">
+        <div class="filter-container">
+            <p><small>Filter project: </small></p>
+            <button class="btn btn-default filter-button active" data-toggle="buttons" aria-pressed="true"data-filter="all">All</button>
+            <button class="btn btn-default filter-button" data-toggle="buttons" data-filter="f-html">HTML</button>
+            <button class="btn btn-default filter-button" data-toggle="buttons" data-filter="f-css">CSS</button>
+            <button class="btn btn-default filter-button" data-toggle="buttons" data-filter="f-bootstrap">Bootstrap</button>
+            <button class="btn btn-default filter-button" data-toggle="buttons" data-filter="f-python">Python</button>
+            <button class="btn btn-default filter-button" data-toggle="buttons" data-filter="f-sql">SQL</button>
+        </div>
+    </div>
+
+    <!-- Cards -->
+    <div class="container">
+
+        <div class="row text-center">
+
+            <div class="col-lg-3 col-md-6 filter f-sql f-html f-css">
+                <div class="card h-100">
+                    <img class="card-img-top" src="./media/book-4109187_1280.png" alt="">
+                    <div class="card-body">
+                        <h4 class="card-title">This project</h4>
+                        <p class="card-text">In this project, I wrote HTML, CSS and SQL. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque.</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-lg-3 col-md-6 filter f-html f-css f-python">
+                <div class="card h-100">
+                    <img class="card-img-top" src="./media/book-4109187_1280.png" alt="">
+                    <div class="card-body">
+                        <h4 class="card-title">That project</h4>
+                        <p class="card-text">In this project I wrote HTML, CSS and python. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 filter f-html f-bootstrap">
+                <div class="card h-100">
+                    <img class="card-img-top" src="./media/book-4109187_1280.png" alt="">
+                    <div class="card-body">
+                        <h4 class="card-title">Another project</h4>
+                        <p class="card-text">In this project I used HTML and bootstrap. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 filter f-python f-sql">
+                <div class="card h-100">
+                    <img class="card-img-top" src="./media/book-4109187_1280.png" alt="">
+                    <div class="card-body">
+                        <h4 class="card-title">This one too</h4>
+                        <p class="card-text">In this project I wrote python and SQL. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+{% endblock content %}

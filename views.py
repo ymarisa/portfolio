@@ -1,10 +1,21 @@
-import requests
-from django.http import HttpResponse
+from datetime import datetime
+# import requests
+# from django.http import HttpResponse
 from django.shortcuts import render
 
 
 def index(request):
-    context = {}
+    content_links = {
+            "content_active": True,
+            "content_link": "",
+            "content_title": "Home",
+    }
+    context = {
+        'title': "Home",
+        'is_contact_page': False,
+        'year': datetime.now().strftime("%Y"),
+        content_links: content_links,
+    }
     return render(request, '', context)
 
 # def index(request):
